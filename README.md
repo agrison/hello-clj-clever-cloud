@@ -161,3 +161,7 @@ Click that **Open the application** button:
 
 You're awesome.
 ![](tutorial/14-profit.png)
+
+## Disclaimer
+
+I'm not at all affiliated with clever-cloud even if I find [@waxzce](https://twitter.com/waxzce), [@clementd](https://twitter.com/clementd) and the rest of the clever-cloud team totally awesome for what they have built so far 😎 
