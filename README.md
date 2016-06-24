@@ -2,7 +2,9 @@
 
 ## Why?
 
-I did not find an official support of Clojure (for now I imagine) on the clever-cloud docs, but it is really easy to achieve by building locally (`lein uberjar`) and usince the [JAR deployement support of clever-cloud](https://www.clever-cloud.com/doc/java/java-jar/).
+I did not find an official support of Clojure (for now I imagine that this is totally on track :)) on the clever-cloud docs.
+
+Fact is: it's really easy to achieve by building locally (`lein uberjar`) and usince the [JAR deployement support of clever-cloud](https://www.clever-cloud.com/doc/java/java-jar/).
 
 ## Prerequisites
 
