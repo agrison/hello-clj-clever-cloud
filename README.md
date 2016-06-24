@@ -4,7 +4,7 @@
 
 I did not find an official support of Clojure (for now I imagine that this is totally on track :)) on the clever-cloud docs.
 
-Fact is: it's really easy to achieve by building locally (`lein uberjar`) and usince the [JAR deployement support of clever-cloud](https://www.clever-cloud.com/doc/java/java-jar/).
+Fact is: it's really easy to achieve by building locally (`lein uberjar`) and using the [JAR deployement support of clever-cloud](https://www.clever-cloud.com/doc/java/java-jar/).
 
 ## Prerequisites
 
@@ -16,7 +16,7 @@ You will need Java and Leiningen installed on your machine, but if uou're alread
 
     lein compojure new app
 
-Then just for fun, bump some versions, in order to use bleeding edge state-of-the-art fully unicorn awesomeness technology.
+Then just for fun, bump some versions, in order to use bleeding edge state-of-the-art fully unicorn-awesomeness technology.
 
 Edit **project.clj**:
 
@@ -38,7 +38,7 @@ Edit **project.clj**:
   :main app.handler)
 ```
 
-We will need a standalone JAR, in order to do that, our `handler` namespace needs to generate as a Java class using `(:gen-class)` and we need a `main` method that starts jetty on port `8080` (default port for a clever-cloud application).
+We will need a standalone JAR, in order to do that, our `handler` namespace needs to generate a Java class using `(:gen-class)` and we need a `main` method that starts jetty on port `8080` (default port for a clever-cloud application).
 
 Edit **src/app/handler.clj**:
 
@@ -68,7 +68,7 @@ That's all there is to it.
     lein uberjar
     # add the jar to repository
     git add -f target/app-0.1.0-SNAPSHOT-standalone.jar
-    git push
+    git push -u origin master
 
 ## clever-cloud
 
