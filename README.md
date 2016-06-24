@@ -1,19 +1,19 @@
-# hello-clj-clever-cloud
+# Sample Clojure webapp running on clever-cloud
 
-FIXME
+## Why?
+
+I did not find an official support of Clojure on the clever-cloud docs, but since Clojure runs on Java, one way to
+do it is to build locally using `lein uberjar`, push that standalone jar on the repo
+and use the [JAR deployement support of clever-cloud](https://www.clever-cloud.com/doc/java/java-jar/).
 
 ## Prerequisites
 
-You will need [Leiningen][] 2.0.0 or above installed.
+You will need Java and Leiningen installed.
 
-[leiningen]: https://github.com/technomancy/leiningen
+## Build
 
-## Running
+    lein uberjar
+    git add -f target/app-0.1.0-SNAPSHOT-standalone.jar
+    git push
 
-To start a web server for the application, run:
 
-    lein ring server
-
-## License
-
-Copyright © 2016 FIXME
