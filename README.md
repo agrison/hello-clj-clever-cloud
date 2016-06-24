@@ -65,12 +65,6 @@ Edit **src/app/handler.clj**:
 
 ### clever-cloud specifics
 
-Specificities can be set in the `clevercloud/` folder.
-
-We want our app to run on Java 8, so lets add some `java_version` file with `8` as a content.
-
-    echo 8 > clevercloud/java_version
-
 As explained on the clever-cloud docs regarding JAR deployment, add a `jar.json` file to the `clevercloud/` directory:
 
     cat <<EOF > clevercloud/jar.json
@@ -109,6 +103,9 @@ Go sign-in or create an account on [clever-cloud](https://clever-cloud.com) then
 ### Select `Java + Maven`
 
 ![](tutorial/3-select-java-maven.png)
+
+Newly created java applications run on java 8 by default.
+You can set the java version with the `JAVA_VERSION` environment variable.
 
 ### Edit the instance (if you want)
 
