@@ -1,4 +1,5 @@
 /target
+!/target/app-0.1.0-SNAPSHOT-standalone.jar
 /lib
 /classes
 /checkouts
@@ -59,7 +60,7 @@ buildNumber.properties
 
 # Package Files #
 *.jar
-!target/app-0.1.0-SNAPSHOT-standalone.jar
+!app-0.1.0-SNAPSHOT-standalone.jar
 *.war
 *.ear
 
