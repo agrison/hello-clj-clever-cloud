@@ -149,6 +149,7 @@ Then click the **read logs** link above that pretty little orange circle:
 ### Check that the application is UP
 
 If you can see that little comforting green circle:
+
 ![](tutorial/12-app-is-up.png)
 
 ### Open the application
