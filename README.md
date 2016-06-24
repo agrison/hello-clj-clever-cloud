@@ -8,7 +8,7 @@ Fact is: it's really easy to achieve by building locally (`lein uberjar`) and us
 
 ## Prerequisites
 
-You will need Java and Leiningen installed on your machine, but if uou're already fan of Clojure, you got this covered.
+You will need Java and Leiningen installed on your machine, but if you are already a fan of Clojure, you got this covered.
 
 ## Create the application
 
