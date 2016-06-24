@@ -2,9 +2,9 @@
 
 ## Why?
 
-I did not find an official support of Clojure (for now I imagine that this is totally on track :)) on the clever-cloud docs.
+There is no official `clojure` & `leiningen` support at the moment on clever-cloud, even if I'm sure that this is totally on track? 😃.
 
-Fact is: it's really easy to achieve by building locally (`lein uberjar`) and using the [JAR deployement support of clever-cloud](https://www.clever-cloud.com/doc/java/java-jar/).
+But it's really easy to achieve it by building locally (or Jenkins or whatever) and using the [JAR deployement support of clever-cloud](https://www.clever-cloud.com/doc/java/java-jar/).
 
 ## Prerequisites
 
@@ -18,7 +18,7 @@ You will need Java and Leiningen installed on your machine, but if you are alrea
 
 ### Edit the app
 
-Then just for fun, bump some versions, in order to use bleeding edge state-of-the-art fully unicorn-awesomeness technology.
+Then just for fun, bump some versions, in order to use bleeding edge state-of-the-art fully unicorn-approved awesome technology.
 
 Edit **project.clj**:
 
