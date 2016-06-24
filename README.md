@@ -16,6 +16,8 @@ You will need Java and Leiningen installed on your machine, but if uou're alread
 
     lein compojure new app
 
+### Edit the app
+
 Then just for fun, bump some versions, in order to use bleeding edge state-of-the-art fully unicorn-awesomeness technology.
 
 Edit **project.clj**:
@@ -61,7 +63,29 @@ Edit **src/app/handler.clj**:
   (jetty/run-jetty app {:port 8080}))
 ```
 
-That's all there is to it.
+### clever-cloud specifics
+
+Specificities can be set in the `clevercloud/` folder.
+
+We want our app to run on Java 8, so lets add some `java_version` file with `8` as a content.
+
+    echo 8 > clevercloud/java_version
+
+As explained on the clever-cloud docs regarding JAR deployment, add a `jar.json` file to the `clevercloud/` directory:
+
+    cat <<EOF > clevercloud/jar.json
+    {
+      "deploy": {
+        "jarName": "target/app-0.1.0-SNAPSHOT-standalone.jar"
+      }
+    }
+    EOF
+
+That way, clever-cloud knows what JAR to deploy & run.
+
+### That's it
+
+Yes, that's all there is to it.
 
 ## Build
 
